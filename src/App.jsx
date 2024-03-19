@@ -1,17 +1,12 @@
-import './App.css'
-import HelloWorld from './assets/components/layout/HelloWorld'
-
-
+import "./App.css";
+import AOTCharacters from "./layouts/AOTCharacters";
 
 function App() {
-
-  const name = '+++ inserta aquí tu nombre +++'
-
   return (
     <>
-      <HelloWorld name={name} />
+      <AOTCharacters />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

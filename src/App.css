@@ -1,42 +1,79 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  background-image: url("/img/main-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.search {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
 }
 
-.card {
-  padding: 2em;
+.search input {
+  background-color: azure;
+  color: #333;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  font-size: 18px;
+  padding-left: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.search button {
+  width: 260px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  color: #333;
+}
+
+.search button:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.aot-character {
+  width: 250px;
+  border-radius: 25px;
+  background-color: #333;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.aot-character h4 {
+  font-size: 16px;
+}
+.aot-character p {
+  font-size: 14px;
 }
